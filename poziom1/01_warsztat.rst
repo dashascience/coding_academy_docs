@@ -19,11 +19,11 @@ wydajny, ale nauka programowania nie powodowała frustracji natury sprzętowej.
 
 Komputer, ale jaki?
 ===================
-Dla naszych potrzeb chyba najlepiej sprawdzi się laptop. Większość maszyn wyprodukowanych po 2012 roku i spełniające
+Dla naszych potrzeb chyba najlepiej sprawdzi się laptop. Większość maszyn wyprodukowanych po 2010 roku i spełniające
 poniższe wymagania powinna być OK.
 
-- **procesor intel i5 lub i7**
-- **pamięć operacyjna (RAM)** min. 8GB
+- **procesor intel i3, i5 lub i7**
+- **pamięć operacyjna (RAM)** min. 4GB
 - **dysk SSD** - nie jest niezbędny, ale mając go, wszystko będzie działało szybciej
 - **Windows 10** - na takim systemie operacyjnym będziemy wykonywać ćwiczenia. Windows 7 lub 8 też da radę.
   Windows XP sie nie nadaje, bo nie zainstalujemy na nim najnowszego pythona!
@@ -35,12 +35,20 @@ sprzętu używanego.
 
 Jak zbudować sobie środowisko?
 ******************************
-Czym jest środowisko? Środowisko, to zainstalowany zestaw oprogramowania, który pozwoli nam pisać i uruchamiać kod.
-Aby uczyć się programowania w języku Python potrzebujemy 4 rzeczy. Wszystkie są dostępne za darmo:
 
-- Python - zestaw narzędzi niezbędnych do uruchamiania programów napisanych w Pythonie `https://www.python.org <https://www.python.org/ftp/python/3.8.2/python-3.8.2.exe>`_
+Tytułem wstępu
+==============
+
+Czym jest środowisko? Środowisko, to zainstalowany zestaw oprogramowania, który pozwoli nam pisać i uruchamiać kod.
+Aby stworzyć środowisko programistyczne w języku Python potrzebujemy 2 rzeczy. Obie dostępne są za darmo:
+
+- Python - zestaw narzędzi niezbędnych do uruchamiania programów napisanych w Pythonie
+  `https://www.python.org <https://www.python.org/ftp/python/3.8.2/python-3.8.2.exe>`_
 - PyCharm community - zintegrowane środowisko programistyczne `https://www.jetbrains.com/pycharm
   <https://download.jetbrains.com/python/pycharm-community-2020.1.exe>`_
+
+Opcjonalnie można sobie zainstalować jeszcze 2 rzeczy (nie są niezbędne - przydadzą się w poziomach wyższych niż podstawowy):
+
 - git - oprogramowanie do kontroli wersji `https://git-scm.com/download/win
   <https://github.com/git-for-windows/git/releases/download/v2.26.0.windows.1/Git-2.26.0-64-bit.exe>`_
 - sourceTree - przyjazny interfejs użytkownika dla gita `https://sourcetreeapp.com
@@ -51,7 +59,7 @@ Aby uczyć się programowania w języku Python potrzebujemy 4 rzeczy. Wszystkie 
 
 Po pobraniu powyższych powinniśmy mieć następujące pliki:
 
-.. image:: images/files.png
+.. figure:: images/files.png
 
 No to instalujemy
 =================
@@ -61,8 +69,9 @@ Python
 - Uruchamiamy plik **python-3.8.2.exe**
 - Na pierwszym ekranie zaznaczamy "Add Python 3.8 to PATH" i wybieramy **Install now**.
 
-   .. image:: images/python1.png
+   .. figure:: images/python1.png
       :width: 400
+
 
    .. note::
       Dobrze jest zapamiętac ścieżkę, w której Python się nam instaluje - przyda się w kolejnych krokach.
@@ -71,7 +80,7 @@ Python
 
 - Po udanej instalacji klikamy **Close**.
 
-   .. image:: images/python2.png
+   .. figure:: images/python2.png
       :width: 400
 
 - Weryfikacja: po poprawnej instalacji wykonanie w Wierszu polecenia:
@@ -80,7 +89,7 @@ Python
 
   powinno zwrócić wersję Pythona.
 
-   .. image:: images/python3.png
+   .. figure:: images/python3.png
       :width: 400
 
 
@@ -88,81 +97,79 @@ PyCharm
 -------
 - Uruchamiamy plik **pycharm-community-2020.1.exe**
 
-  .. image:: images/pycharm1.png
+  .. figure:: images/pycharm1.png
      :width: 400
 
 - Jedyna rzecz, którą zmieniamy podczes instalacji, to zaznaczenie opcji **Create Desktop Shortcut -> 64-bit launcher**
 
-  .. image:: images/pycharm2.png
+  .. figure:: images/pycharm2.png
      :width: 400
 
 - Po udanej instalacji klikamy **Finish**
 
-  .. image:: images/pycharm3.png
+  .. figure:: images/pycharm3.png
      :width: 400
 
 - Na desktopie pojawi się ikona.
 
-  .. image:: images/pycharm4.png
+  .. figure:: images/pycharm4.png
 
 - Uruchamiamy PyCharm. Wybieramy **Do not import settings**
 
-  .. image:: images/pycharm5.png
+  .. figure:: images/pycharm5.png
      :width: 400
 
-- Wybieramy motyw kolorystyczny i ** Next - Featured plugins**
+- Wybieramy motyw kolorystyczny i **Next - Featured plugins**
 
-  .. image:: images/pycharm6.png
+  .. figure:: images/pycharm6.png
      :width: 400
 
 - Tu nic nie zmieniamy i klikamy **Start using PyCharm**.
 
-  .. image:: images/pycharm7.png
+  .. figure:: images/pycharm7.png
      :width: 400
 
 - Po uruchomieniu PyCharm powinniśmy dostać takie okienko:
 
-  .. image:: images/pycharm8.png
+  .. figure:: images/pycharm8.png
      :width: 400
 
-git
----
-- Uruchamiamy instalator **Git-2.26.0-64-bit.exe**
-- Instalujemy z domyślnymi opcjami. Niczego nie trzeba zmieniać.
-- Weryfikacja:
 
-  * po poprawnej instalacji wykonanie w Wierszu polecenia:
+Weryfikacja poprawnej instalacji środowiska
+-------------------------------------------
+- W oknie pyCharm wybieramy opcję **Get from version control**
+- W polu URL wpisujemy: **https://github.com/wsiekiera/coding_academy_welcome.git**
+- Wybieramy **Clone**
 
-    ``git --version``
-
-    powinno zwrócić wersję gita.
-
-    .. image:: images/git1.png
-       :width: 400
-
-  * menu kontekstowe powinno zostać rozszerzone o nowe opcje:
-
-     .. image:: images/git2.png
-
-
-SourceTree
-----------
-- Uruchamiamy instalator **SourceTreeSetup-3.3.8.exe**
-- Jeśli nie masz konta na bitbucket.org, to teraz należy je założyć i zalogować się na to konto po wybraniu opcji
-  **Bitbucket**
-
-  .. image:: images/sourcetree1.png
+  .. figure:: images/vcs.png
      :width: 400
 
-- Pozostałe parametry instalacji pozostawiamy bez zmian.
-- Sourcetree instaluje się na ścieżce ``C:\Users\<username>\AppData\Local\SourceTree``
-- Należy zrobić sobie skrót do pliku SourceTree.exe na desktopie.
 
-O co chodzi z programowaniem?
-*****************************
+- W tym momencie do naszego IDE (Integrated Development Environment) zaczytany zostaje fragment kodu, który posłuży nam do sprawdzenia czy wszystko działa.
+- Ostatnią rzeczą, którą trzeba zrobić, to wskazać gdzie znajduje się zainstalowany wcześniej interpreter Pythona. A robi się to tak:
+- W prawym, dolnym rogu ekranu klimaky w **<No interpreter>** i dalej **Add interpreter**
 
-Podstawy GITa.
-**************
+  .. figure:: images/interpreter1.png
+     :width: 400
 
+- Sprawdzamy, czy pole New environment jest zaznaczone, a w polu **Base interpreter** wpisana jest ścieżka do Pythona zapamiętana na początku tego poradnika. Jeśli wszystko się zgadza, klikamy **OK**
 
+  .. figure:: images/interpreter2.png
+     :width: 400
 
+- Pora uruchomić nasz kod. Rozwijamy drzewko katalogów po lewej stronie i klikamy 2x na plik main.py. Plik zaczyta się do edytora.
+
+  .. figure:: images/interpreter3.png
+     :width: 400
+
+- Klikamy prawym klawiszem na pliku main.py i wybieramy **Run main**
+
+  .. figure:: images/interpreter4.png
+     :width: 400
+
+- W terminalu w dolnej części okna powinniśmy zobaczyć efekt działania kodu.
+
+  .. figure:: images/interpreter5.png
+     :width: 400
+
+- Jeśli dotarłeś do tego etapu, to gratuluję! Zainstalowałeś sobie środowisko developerskie.

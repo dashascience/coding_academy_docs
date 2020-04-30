@@ -13,18 +13,3 @@ Some text here.
    :caption: Poziom 1
 
    poziom1/*
-
-
-.. toctree::
-   :glob:
-   :caption: Poziom 2
-
-   poziom2/*
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
