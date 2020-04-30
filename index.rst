@@ -6,8 +6,6 @@
 Welcome to Coding Academy's documentation!
 ==========================================
 
-Some text here.
-
 .. toctree::
    :glob:
    :caption: Poziom 1
