@@ -183,8 +183,8 @@ Nowy projekt
   .. figure:: images/yoda.jpg
      :width: 400
 
-Załadowanie kodu z repozytorium
--------------------------------
+Załadowanie kodu z repozytorium (opcjonalne)
+--------------------------------------------
 
 .. note:: **Wykonanie tej części jest opcjonalne.** Pokazuję tutaj w jaki sposób można zaczytać kod ze zdalnego repozytorium.
 
