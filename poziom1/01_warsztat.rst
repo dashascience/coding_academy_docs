@@ -136,7 +136,58 @@ PyCharm
 
 
 Weryfikacja poprawnej instalacji środowiska
--------------------------------------------
+===========================================
+
+Nowy projekt
+------------
+
+- Uruchamiamy pyCharm i w oknie wybieramy opcję **Create new project**
+
+  .. figure:: images/pycharm8.png
+     :width: 400
+
+- Wybieramy nazwę katalogu, gdzie znajdował się będzie nasz kod (Location)
+- Rozwijamy sekcję **Project interpreter** i sprawdzamy, czy jest zaznaczona opcja **New environment using Virtualenv**,
+  oraz czy w polu **Base interpreter** wskazana jest poprawna ścieżka, w której zainstalowaliśmy Pythona.
+
+  .. figure:: images/pycharm_new_project1.png
+     :width: 400
+
+- Klikamy **Create** i czekamy chwilę, aż pyCharm skończy przygotowywać nasz projekt
+- Klikamy prawym klawiszem myszy na nazwę projektu (taka sama jak nazwa katalogu, który wskazaliśmy w poprzednim kroku)
+- Wybieramy **New -> Python File**
+
+  .. figure:: images/pycharm_new_project2.png
+     :width: 400
+
+- Plik, w którym będziemy pisali kod należy nazwać. Wpisujemy nazwę i naciskamy ENTER
+
+  .. figure:: images/pycharm_new_project3.png
+     :width: 400
+
+- W prawej części nowy plik zostaje otwarty
+- Pora sprawdzić czy to działa. W pliku wpisujemy jedną linię kodu:
+  ``print('Hello World')``
+- Aby pierwszy raz uruchomić nasz kod klikamy prawym klawiszem w pustej przestrzeni edytora i wybieramy **Run main**
+
+  .. figure:: images/pycharm_new_project4.png
+     :width: 400
+
+- W dolnej części okna zobaczymy wynik działania naszego programu
+
+  .. figure:: images/pycharm_new_project5.png
+     :width: 400
+
+- Jeśli dotarłeś do tego etapu, to gratuluję! Zainstalowałeś sobie środowisko developerskie.
+
+  .. figure:: images/yoda.jpg
+     :width: 400
+
+Załadowanie kodu z repozytorium
+-------------------------------
+
+.. note:: **Wykonanie tej części jest opcjonalne.** Pokazuję tutaj w jaki sposób można zaczytać kod ze zdalnego repozytorium.
+
 - W oknie pyCharm wybieramy opcję **Get from version control**
 - W polu URL wpisujemy: **https://github.com/wsiekiera/coding_academy_welcome.git**
 - Wybieramy **Clone**
@@ -172,4 +223,3 @@ Weryfikacja poprawnej instalacji środowiska
   .. figure:: images/interpreter5.png
      :width: 400
 
-- Jeśli dotarłeś do tego etapu, to gratuluję! Zainstalowałeś sobie środowisko developerskie.
