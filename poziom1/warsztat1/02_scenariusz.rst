@@ -1,5 +1,5 @@
-Tematy do poruszenia na warsztacie
-**********************************
+Scenariusz warsztatu 1 - poziom początkujący
+############################################
 
 * O co chodzi z programowaniem
 
@@ -30,8 +30,18 @@ Tematy do poruszenia na warsztacie
 
     * literały / operandy
     * operatory (+ - * /)
+    * operatory ** i %
     * wyrażenia
     * wartości
+    * kolejność operatorów
+    * składnia, co to jest SyntaxError
 
+* Zmienne
 
+    * Przypisywanie wartości do zmiennej (mechanizm i pokazanie co dzieje się w pamięci operacyjnej
+    * Kolejne typy zmiennych (poprzednio były liczby całkowite): zmiennoprzecinkowe
+    * operator / vs //
 
+* Pobieranie danych od użytkownika - funkcja input()
+* Zwracanie danych na ekran - funkcja print()
+* Ćwiczenia do samodzielnego wykonania
