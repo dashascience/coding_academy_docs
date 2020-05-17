@@ -67,7 +67,7 @@ Operacje arytmetyczne
    | Ćwiczenie 1
    | Za pomocą REPL wykonaj operacje arytmetyczne:
 
-   .. code-block:: python
+   .. code-block::
 
       128*256
       100/33
@@ -115,11 +115,32 @@ Przykład użycia różnych typów
    tuple_variable = (111, 'This', 'is', 'a', 'tuple', False)
    dictionary_variable = {'key1':'value1', 'key2':1234, 3:'value3'}
 
+Zauważyć tu należy 2 rzeczy:
+
+* Linie zaczynające się od znaku ```#``` to komentarze. Python ich nie wykonuje, mają znaczenie czysto informacyjne.
+  Dobrym zwyczajem jest zostawianie komentarzy w miejscach gdzie kod jest zawiły, aby programista czytający ten kod
+  kiedyś mógł łatwiej zrozumieć nasze intencje.
+* Ciekawą cechę wynikającą z faktu, że Python jest dynamicznie typowany: typ zmiennej może się zmieniać w trakcie
+  działania programu. Zobacz przykład:
+
+.. code-block:: python
+
+   >>> var_a = 1
+   >>> type(var_a)
+   <class 'int'>
+   >>> var_a = 1.2
+   >>> type(var_a)
+   <class 'float'>
+   >>> var_a = 'test'
+   >>> type(var_a)
+   <class 'str'>
+
 .. note::
    | Ćwiczenie 3
-   | Zadanie polega na zaproponowaniu użycia konkretnego typu zmiennej dla danych które chcemy przechować. Zastanów się
-     jakiego typu zmiennych użyjesz w każdym z przypadków. Przypisz przykładowe wartości do zmiennych w pliku .py
+   | Zadanie polega na zaproponowaniu użycia konkretnego typu danych dla zmiennych które chcemy przechować. Zastanów się
+     jakiego typu danych użyjesz w każdym z przypadków. Przypisz przykładowe wartości do zmiennych w pliku .py
      i zwróć je na ekran.
+   | Hint: Typy można sprawdzić poleceniem type(zmienna).
 
    .. code-block:: python
 
@@ -129,6 +150,10 @@ Przykład użycia różnych typów
       Wiek
       Wzrost (w metrach)
       Numery kart kredytowych
+
+Algebra bool'a
+==============
+TODO!
 
 Operacje na danych typu string (znakowych)
 ==========================================
@@ -179,7 +204,7 @@ Typy numeryczne rzutujemy bez problemu na dowolny inny typ:
    >>> bool(integer_variable)
    True
 
-Typy znakowe też, ale tylko gdy ma to sens (nie da się np. zamienić słowa na liczbę).
+Typy znakowe też, ale tylko gdy ma to sens (nie da się np. zamienić ciągu liter na liczbę).
 
 .. code-block::
 
@@ -202,7 +227,20 @@ Typy znakowe też, ale tylko gdy ma to sens (nie da się np. zamienić słowa na
    Traceback (most recent call last):
    File "<input>", line 1, in <module>
    ValueError: invalid literal for int() with base 10: 'abc'
-   >>> float(another_String_value)
-   Traceback (most recent call last):
-   File "<input>", line 1, in <module>
-   ValueError: could not convert string to float: 'abc'
+
+.. note::
+   | Ćwiczenie 4a
+   | Wklej poniższy fragment kodu do edytora, uruchom i przetestuj działanie.
+
+   .. code-block:: python
+
+      liczba1 = input('Podaj liczbę 1 :')
+      liczba2 = input('Podaj liczbę 2 :')
+      print(liczba1 + liczba2)
+
+   | Czy działa dobrze? Podyskutujmy o tym co się tam zadziało.
+   |
+   | Ćwiczenie 4b
+   | Pobierz od użytkownika 2 liczby całkowite i zwróc na ekran ich sumę, różnicę, iloczyn i iloraz. Pamiętaj, że
+     wynikiem działania komendy input() jest typ string.
+   | Hint: Konieczne będzie rzutowanie typu pobranych danych!
