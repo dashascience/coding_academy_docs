@@ -53,8 +53,8 @@ Zainstalowaliśmy środowisko, jak z niego korzystać - prezentacja możliwości
 * pyCharm
 
 
-Operacje arytmetyczne na liczbach całkowitych (integer)
-=======================================================
+Operacje arytmetyczne
+=====================
 
     * operatory (+ - * /)
     * operatory ** i %
@@ -63,28 +63,107 @@ Operacje arytmetyczne na liczbach całkowitych (integer)
     * kolejność operatorów
     * składnia, co to jest SyntaxError
 
-.. note:: Ćwiczenie 1
-   Za pomocą REPL wykonaj operacje arytmetyczne:
+.. note::
+   | Ćwiczenie 1
+   | Za pomocą REPL wykonaj operacje arytmetyczne:
 
    .. code-block:: python
 
       128*256
+      100/33
       2 do potęgi 16
       reszta z dzielenia 100 przez 8
 
-   Wykonaj te same operacje w pliku main.py. Zwróć wynik na ekran używając funkcji print()
+   | Ćwiczenie 2
+   | Wykonaj te same operacje w pliku main.py. Zwróć wyniki na ekran używając funkcji print()
 
 
 Zmienne
 =======
 
 * Zmienne służą do przechowywania wartości (np wyniku obliczeń, ciągu znaków lub obiektu)
-* zmienna ma nazwę i typ, natomiast typu nie trzeba jawnie deklarować - python domyśli się jakiego typu powinna być
+* zmienna ma nazwę i typ, natomiast typu nie trzeba jawnie deklarować - python jest dynamicznie typowany, więc domyśli
+  się jakiego typu powinna być
   zmienna na podstawie wyrażenia z prawej strony instrukcji przypisania (=)
-* Przypisywanie wartości do zmiennej (mechanizm i pokazanie co dzieje się w pamięci operacyjnej
-* Kolejne typy zmiennych (poprzednio były liczby całkowite): zmiennoprzecinkowe
-* operator / vs //
+* Przypisywanie wartości do zmiennej (mechanizm i pokazanie co dzieje się w pamięci operacyjnej)
 
-* Pobieranie danych od użytkownika - funkcja input()
-* Zwracanie danych na ekran - funkcja print()
-* Ćwiczenia do samodzielnego wykonania
+.. code-block:: python
+
+   nazwa_zmiennej = <wartosc / wyrazenie>
+
+* Typy danych (pokaż podział i opowiedz)
+
+   .. figure:: images/python_data_types.jpg
+      :width: 400
+
+      Typy danych w języku Python
+
+Przykład użycia różnych typów
+=============================
+
+.. code-block:: python
+
+   # Typy proste
+   numeric_integer_variable = 123
+   numeric_float_variable = 123.456
+   string_variable = 'Some sample string'
+   boolean_variable = True
+
+   # Typu złożone
+   set_variable = {1,2,3,'a'}
+   list_variable = ['Some', 'sample', 'list', 1, 2, 3]
+   tuple_variable = (111, 'This', 'is', 'a', 'tuple', False)
+   dictionary_variable = {'key1':'value1', 'key2':1234, 3:'value3'}
+
+.. note::
+   | Ćwiczenie 3
+   | Zadanie polega na zaproponowaniu użycia konkretnego typu zmiennej dla danych które chcemy przechować. Zastanów się
+     jakiego typu zmiennych użyjesz w każdym z przypadków. Przypisz przykładowe wartości do zmiennych w pliku .py
+     i zwróć je na ekran.
+
+   .. code-block:: python
+
+      Imię
+      Nazwisko
+      Numer dowodu osobistego
+      Wiek
+      Wzrost (w metrach)
+      Numery kart kredytowych
+
+Operacje na danych typu string (znakowych)
+==========================================
+
+.. code-block:: python
+
+   # Operacje na zmiennych znakowych (string)
+   imie = 'Michał'
+   nazwisko = 'Kowalski'
+   # Operator '+' w przypadku zmiennych znakowych łączy dane
+   print(imie+nazwisko)
+   # Pamiętajmy o spacji pomiędzy
+   print(imie+' '+nazwisko)
+   # Długość imienia
+   print(len(imie))
+
+Pobieranie danych od użytkownika - funkcja input()
+==================================================
+
+Funkcja input() po wywołaniu oczekuje na znaki wpisane z klawiatury. Po wprowadzeniu znaków zwraca wpisany przez
+uzytkownika ciąg znaków. Można go wtedy np przypisać do zmiennej. Pamiętać należy, że funkcja input() zawsze zwraca
+zmienną typu string!
+
+.. code-block:: python
+
+   imie = input('Podaj imie: ')
+   wiek = input('Podaj wiek: ')
+   print('Masz na imie ' + imie)
+   print('Masz ' + wiek + ' lat.')
+   print('Zmienna imie jest typu ' + str(type(imie)))
+   print('Zmienna wiek jest typu ' + str(type(wiek)))
+
+Zwróć uwagę na konstrukcję ```str(type(imie))```. To jest rzutowanie typów. Zajmiemy się nim teraz.
+
+Rzutowanie typów
+================
+
+Służy do zmiany jednego typu w drugi.
