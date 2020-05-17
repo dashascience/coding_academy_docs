@@ -167,3 +167,42 @@ Rzutowanie typów
 ================
 
 Służy do zmiany jednego typu w drugi.
+Typy numeryczne rzutujemy bez problemu na dowolny inny typ:
+
+.. code-block:: python
+
+   >>> integer_variable = 123
+   >>> float(integer_variable)
+   123.0
+   >>> str(integer_variable)
+   '123'
+   >>> bool(integer_variable)
+   True
+
+Typy znakowe też, ale tylko gdy ma to sens (nie da się np. zamienić słowa na liczbę).
+
+.. code-block::
+
+   >>> string_value = '123'
+   >>> int(string_value)
+   123
+   >>> float(string_value)
+   123.0
+   >>> bool(string_value)
+   True
+
+   # string będzie dało się rzutować na boolean
+   # pusty ciąg znaków albo None zwróci False
+   # wszystko inne zwróci True
+   >>> another_String_value = 'abc'
+   >>> bool(another_String_value)
+   True
+   # nie wszystkie stringi da się rzutować na typy numeryczne
+   >>> int(another_String_value)
+   Traceback (most recent call last):
+   File "<input>", line 1, in <module>
+   ValueError: invalid literal for int() with base 10: 'abc'
+   >>> float(another_String_value)
+   Traceback (most recent call last):
+   File "<input>", line 1, in <module>
+   ValueError: could not convert string to float: 'abc'
