@@ -1,8 +1,8 @@
 Scenariusz warsztatu 1 - poziom początkujący
 ############################################
 
-O co chodzi z programowaniem
-****************************
+Intro - O co chodzi z programowaniem
+************************************
 
 Definicje
 =========
@@ -52,9 +52,58 @@ Zainstalowaliśmy środowisko, jak z niego korzystać - prezentacja możliwości
 
 * pyCharm
 
+B01 - Python: elementy składni języka
+*************************************
 
-Operacje arytmetyczne
-=====================
+Składnia - zmienne
+==================
+
+* Zmienne służą do przechowywania wartości (np wyniku obliczeń, ciągu znaków lub obiektu)
+* zmienna ma nazwę i typ, natomiast typu nie trzeba jawnie deklarować - python jest dynamicznie typowany, więc domyśli
+  się jakiego typu powinna być
+  zmienna na podstawie wyrażenia z prawej strony instrukcji przypisania (=)
+* Przypisywanie wartości do zmiennej (mechanizm i pokazanie co dzieje się w pamięci operacyjnej)
+
+.. code-block:: python
+
+   nazwa_zmiennej = <wartosc / wyrazenie>
+
+Wyświetlanie wartości zmiennej
+==============================
+
+Do wyświetlenia wartości zmiennej używamy funkcji ```print()```. Wewnątrz nawiasów umieszczamy to, co chcemy wyświetlić.
+Jeśli argumentem fukcji print będzie zmienne, to wyświetlona zostanie jej wartość. Jeli argumentem będzie literał,
+to wyświetlony zostanie literał. Zobacz przykład:
+
+.. code-block:: python
+
+   imie = 'Jacek'
+   nazwisko = 'Kowalski'
+   print(imie)
+   print('imie')
+   # Zauważ, że argumentem funkcji print() może być wyrażenie, wówczas wyświetlony zostanie wynik wyrażenia:
+   print(2+4)
+   print(imie + ' ' + nazwisko)
+
+.. note::
+   | Ćwiczenie
+   | Do zmiennych o nazwach imie, nazwisko, wiek przypisz odpowiedni swoje imię, nazwisko i wiek.
+   | Wyświetl na akranie zdanie: **Nazywam się <imie> <nazwisko>, mam <wiek> lat.**
+
+Znak końca linii
+================
+
+Znak ```\n``` oznacza koniec linii. Gdy istnieje konieczność zwrócenia wielu linii jedną komendą ```print()``` należy zastosować właśnie taki znak.
+
+.. code-block:: python
+
+   linia1 = 'To jest linia 1'
+   linia2 = 'To jest linia 2'
+   print(linia1 + linia2)
+   print(linia1 + '\n' + linia2)
+
+Operatory arytmetyczne
+======================
 
     * operatory (+ - * /)
     * operatory ** i %
@@ -77,19 +126,21 @@ Operacje arytmetyczne
    | Ćwiczenie 2
    | Wykonaj te same operacje w pliku main.py. Zwróć wyniki na ekran używając funkcji print()
 
+Operatory logiczne
+==================
 
-Zmienne
-=======
+    * Zmienna typu boolean może przyjmować tylko 2 wartości: True, False
+    * Każdy obiekt posiada wartość typu boolean.
 
-* Zmienne służą do przechowywania wartości (np wyniku obliczeń, ciągu znaków lub obiektu)
-* zmienna ma nazwę i typ, natomiast typu nie trzeba jawnie deklarować - python jest dynamicznie typowany, więc domyśli
-  się jakiego typu powinna być
-  zmienna na podstawie wyrażenia z prawej strony instrukcji przypisania (=)
-* Przypisywanie wartości do zmiennej (mechanizm i pokazanie co dzieje się w pamięci operacyjnej)
+        * Jako False rozwiązane zostaną: None, False, 0, puste kolekcje ("", (), [], {})
+        * Wszystkie inne obiekty zostaną rozwiązane jako True
+        * Gdy klasa zawiera implementację metod __len__(self) lub __nonzero__(self), to te metody wpływają na wynik
+          (nie ma co tego bardziej rozwijać na tym poziomie, warto wspomnieć, że można ręcznie sterować
 
-.. code-block:: python
+    * Operatory powównania (<, <=, >, >=, ==, !=)
 
-   nazwa_zmiennej = <wartosc / wyrazenie>
+Type annotatnions
+=================
 
 * Typy danych (pokaż podział i opowiedz)
 
@@ -98,8 +149,95 @@ Zmienne
 
       Typy danych w języku Python
 
-Przykład użycia różnych typów
-=============================
+B02 - Python: numeryczne typy danych
+************************************
+
+int - liczby całkowite
+======================
+
+float - liczby zmiennoprzecinkowe
+=================================
+
+B03 - Python: logiczne typy danych
+**********************************
+
+bool
+====
+
+None
+====
+
+B04 - Python: łańcuchy znaków
+*****************************
+
+string
+======
+
+Operacje na danych typu string (znakowych) - metody
+===================================================
+
+.. code-block:: python
+
+   # Operacje na zmiennych znakowych (string)
+   imie = 'Michał'
+   nazwisko = 'Kowalski'
+   # Operator '+' w przypadku zmiennych znakowych łączy dane
+   print(imie+nazwisko)
+   # Pamiętajmy o spacji pomiędzy
+   print(imie+' '+nazwisko)
+   # Długość imienia
+   print(len(imie))
+
+Pobieranie danych od użytkownika - funkcja input()
+==================================================
+
+Funkcja input() po wywołaniu oczekuje na znaki wpisane z klawiatury. Po wprowadzeniu znaków zwraca wpisany przez
+uzytkownika ciąg znaków. Można go wtedy np przypisać do zmiennej. Pamiętać należy, że funkcja input() zawsze zwraca
+zmienną typu string!
+
+.. code-block:: python
+
+   imie = input('Podaj imie: ')
+   wiek = input('Podaj wiek: ')
+   print('Masz na imie ' + imie)
+   print('Masz ' + wiek + ' lat.')
+   print('Zmienna imie jest typu ' + str(type(imie)))
+   print('Zmienna wiek jest typu ' + str(type(wiek)))
+
+Zwróć uwagę na konstrukcję ```str(type(imie))```. To jest rzutowanie typów. Zajmiemy się nim teraz.
+
+B05 - Python: sekwencje
+***********************
+
+list
+====
+
+tuple
+=====
+
+set
+===
+
+zagnieżdżone sekwencje
+======================
+
+indeksowanie, slicing, rozpakowywanie
+=====================================
+
+B06 - Python: słowniki
+**********************
+
+dict
+====
+
+zip, enumerate
+==============
+
+zagnieżdżone słowniki
+=====================
+
+Przykład użycia różnych typów danych
+====================================
 
 .. code-block:: python
 
@@ -150,43 +288,6 @@ Zauważyć tu należy 2 rzeczy:
       Wiek
       Wzrost (w metrach)
       Numery kart kredytowych
-
-Algebra bool'a
-==============
-TODO!
-
-Operacje na danych typu string (znakowych)
-==========================================
-
-.. code-block:: python
-
-   # Operacje na zmiennych znakowych (string)
-   imie = 'Michał'
-   nazwisko = 'Kowalski'
-   # Operator '+' w przypadku zmiennych znakowych łączy dane
-   print(imie+nazwisko)
-   # Pamiętajmy o spacji pomiędzy
-   print(imie+' '+nazwisko)
-   # Długość imienia
-   print(len(imie))
-
-Pobieranie danych od użytkownika - funkcja input()
-==================================================
-
-Funkcja input() po wywołaniu oczekuje na znaki wpisane z klawiatury. Po wprowadzeniu znaków zwraca wpisany przez
-uzytkownika ciąg znaków. Można go wtedy np przypisać do zmiennej. Pamiętać należy, że funkcja input() zawsze zwraca
-zmienną typu string!
-
-.. code-block:: python
-
-   imie = input('Podaj imie: ')
-   wiek = input('Podaj wiek: ')
-   print('Masz na imie ' + imie)
-   print('Masz ' + wiek + ' lat.')
-   print('Zmienna imie jest typu ' + str(type(imie)))
-   print('Zmienna wiek jest typu ' + str(type(wiek)))
-
-Zwróć uwagę na konstrukcję ```str(type(imie))```. To jest rzutowanie typów. Zajmiemy się nim teraz.
 
 Rzutowanie typów
 ================
@@ -244,3 +345,27 @@ Typy znakowe też, ale tylko gdy ma to sens (nie da się np. zamienić ciągu li
    | Pobierz od użytkownika 2 liczby całkowite i zwróc na ekran ich sumę, różnicę, iloczyn i iloraz. Pamiętaj, że
      wynikiem działania komendy input() jest typ string.
    | Hint: Konieczne będzie rzutowanie typu pobranych danych!
+
+B07 - Python: instrukcje warunkowe
+**********************************
+
+operatory kolejność
+===================
+
+if, else, elif
+==============
+
+in, is, not, and, or
+====================
+
+B08 - Python: pętle
+*******************
+
+while
+=====
+
+for
+===
+
+iterowanie
+==========
