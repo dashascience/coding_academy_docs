@@ -236,12 +236,14 @@ używając indeksów ujemnych.
 
 .. code-block:: python
 
-    # Pierwszy i ostatni wynik totolotka licząc od początku.
+    # Pierwszy, drugi i ostatni wynik totolotka licząc od początku.
     first_lotto_number = lotto_numbers[0]
+    second_lotto_number = lotto_numbers[1]
     last_lotto_number = lotto_numbers[5]
 
-    # Pierwszy i ostatni wynik totolotka licząc od końca.
+    # Pierwszy, drugi i ostatni wynik totolotka licząc od końca.
     first_lotto_number = lotto_numbers[-6]
+    second_lotto_number = lotto_numbers[-5]
     last_lotto_number = lotto_numbers[-1]
 
     # Dane pracownika
