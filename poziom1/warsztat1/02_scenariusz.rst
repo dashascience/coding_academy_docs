@@ -215,11 +215,20 @@ Sekwencja obiektów to taki obiekt który przechowuje inne obiekty. Obiekty te m
 list
 ====
 
-Listę obiektów tworzymy poprzez użycie nawiasów kwadratowych.
+Listę obiektów tworzymy poprzez użycie nawiasów kwadratowych. Listy mogą mieścić w sobie elementy dowolnych typów.
+Mogą to być liczby całkowite tak jak w przykładzie powyżej, mogą to być napisy, oraz inne typy obiektów. Każdy element
+tej samej listy może być innego typu.
 
 .. code-block:: python
 
+    # Lista wyników totolotka
     lotto_numbers = [3, 17, 19, 23, 27, 31]
+
+    # Lista angielskich dni tygodnia
+    days_of_week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+
+    # Lista zawierająca imię, nazwisko oraz wiek jednego pracownika
+    employee = ["Jan", "Kowalski", 24]
 
 tuple
 =====
