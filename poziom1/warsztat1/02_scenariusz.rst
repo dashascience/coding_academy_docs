@@ -251,6 +251,54 @@ używając indeksów ujemnych.
     last_name = employee[1]
     age = employee[2]
 
+To jakie elementy ma mieścić w sobie lista można podać podczas jej tworzenia, jednak nie jest to jedyny możliwy sposób.
+Listę możemy w każdym momencie zmodyfikować. Najprostszymi operacjami modyfikacji listy jest dodawanie i usuwanie
+pojedyńczych jej elementów jak również wymiana wartości znajdujących się na określonej pozycji. Aby to zobaczyć
+odwiedźmy hinduską restaurację.
+
+.. code-block:: python
+
+    # Zacznijmy od pustej listy
+    >>> ordered_dishes = []
+    >>> ordered_dishes
+    []
+
+    # Na początek weźmy jakieś przekąski
+    >>> ordered_dishes.append('Bakłażan w cieście')
+    >>> ordered_dishes.append('Samosa wegetariańska') #  to dla dziewczyny
+    >>> print(ordered_dishes)
+    ['Bakłażan w cieście', 'Samosa wegetariańska']
+
+    # Po 15 minutach miłej rozmowy samosy jakoś szybko zniknęły
+    >>> del ordered_dishes[1]
+    >>> print(ordered_dishes)
+    ['Bakłażan w cieście']
+
+    #  Czas na zupę, może coś na ostro?
+    >>> ordered_dishes.insert(0, 'Pikantna Zupa Masala')
+    >>> print(ordered_dishes)
+    ['Pikantna Zupa Masala', 'Bakłażan w cieście']
+
+    # ... o nie to zbyt palące, może zamiast tego jednak coś bezpieczniejszego?
+    >>> ordered_dishes[0] = 'Krem z krewetkami'
+    >>> print(ordered_dishes)
+    ['Krem z krewetkami', 'Bakłażan w cieście']
+
+    # Bakłażan już zimny raczej nikt go nie dokończy, idzie na straty
+    >>> ordered_dishes.remove('Bakłażan w cieście')
+    >>> print(ordered_dishes)
+    ['Krem z krewetkami']
+
+    # No i wreszcie wołowinka, od razu w dwóch odsłonach
+    >>> ordered_dishes.extend(['Wołowina Kolhapuri', 'Wołowina Kadai'])
+    >>> print(ordered_dishes)
+    ['Krem z krewetkami', 'Wołowina Kolhapuri', 'Wołowina Kadai']
+
+    # Było pyszne, trzeba tu wrócić.
+    >>> ordered_dishes.clear()
+    >>> print(ordered_dishes)
+    []
+
 tuple
 =====
 
