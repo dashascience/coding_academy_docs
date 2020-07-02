@@ -312,8 +312,8 @@ natomiast z listy elementy o podanej wartości. Jeżeli chcemy wyczyścić wszys
 
 Możliwość modyfikacji obiektów nazywamy mutowalnością (ang. mutable). Listy są przykładem obiektów mutowalnych.
 
-# TODO: trailing comma, list constructor, multiline square brackets
-
+.. TODO: trailing comma, multi-line square brackets, list constructor, concatenation and repetition, cloning,
+    explain shallow clone, obtaining index, counting, membership (in), sorting and reversing, len
 
 tuple
 =====
