@@ -299,6 +299,22 @@ odwiedźmy hinduską restaurację.
     >>> print(ordered_dishes)
     []
 
+Nowy elemeny możemy dodać na koniec listy za pomocą metody ``apped``, lub wstawić go przed element o podanej pozycji za
+pomocą metody ``insert``. Metoda ``insert`` przyjmuje najpierw pozycję elementu istniejącego, a następnie element
+wstawiany. Jeżeli chcemy dodać na koniec listy kilka elementów jednocześnie to do tego używamy metody ``extend``.
+
+Aby zmienić element, znajdujący się na danej pozycji na nowy, po prostu przypisujemy nową wartość do elementu listy
+o konkretnym indeksie.
+
+Jeżeli znamy pozycję elementu, możemy usunąć go z listy używając słowa kluczowego ``del``. Metoda ``remove`` usuwa
+natomiast z listy elementy o podanej wartości. Jeżeli chcemy wyczyścić wszystkie elementy listy możemy użyć metody
+``clear``.
+
+Możliwość modyfikacji obiektów nazywamy mutowalnością (ang. mutable). Listy są przykładem obiektów mutowalnych.
+
+# TODO: trailing comma, list constructor, multiline square brackets
+
+
 tuple
 =====
 
