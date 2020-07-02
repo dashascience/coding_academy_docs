@@ -209,8 +209,17 @@ Zwróć uwagę na konstrukcję ```str(type(imie))```. To jest rzutowanie typów.
 B05 - Python: sekwencje
 ***********************
 
+W języku Python występują dwa główne typy reprezentujące sekwencje obiektów: listy (ang. list) i krotki (ang. tuple).
+Sekwencja obiektów to taki obiekt który przechowuje inne obiekty. Obiekty te mają zdefiniowaną kolejność.
+
 list
 ====
+
+Listę obiektów tworzymy poprzez użycie nawiasów kwadratowych.
+
+.. code-block:: python
+
+    lotto_numbers = [3, 17, 19, 23, 27, 31]
 
 tuple
 =====
