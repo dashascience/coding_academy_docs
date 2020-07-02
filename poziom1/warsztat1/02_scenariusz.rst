@@ -216,8 +216,8 @@ list
 ====
 
 Listę obiektów tworzymy poprzez użycie nawiasów kwadratowych. Listy mogą mieścić w sobie elementy dowolnych typów.
-Mogą to być liczby całkowite tak jak w przykładzie powyżej, mogą to być napisy, oraz inne typy obiektów. Każdy element
-tej samej listy może być innego typu.
+Mogą to być liczby całkowite, mogą to być napisy, oraz inne typy obiektów. Każdy element tej samej listy może być
+innego typu.
 
 .. code-block:: python
 
@@ -227,7 +227,7 @@ tej samej listy może być innego typu.
     # Lista angielskich dni tygodnia
     days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-    # Lista zawierająca imię, nazwisko oraz wiek jednego pracownika
+    # Lista zawierająca imię, nazwisko (napisy) oraz wiek (liczba) jednego pracownika.
     employee = ["Jan", "Kowalski", 24]
 
 Aby odwołać się do poszczególnych elementów listy również wykorzystujemy nawiasy kwadratowe. Tym razem podajemy w nich
