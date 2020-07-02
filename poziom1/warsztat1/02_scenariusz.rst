@@ -230,6 +230,25 @@ tej samej listy może być innego typu.
     # Lista zawierająca imię, nazwisko oraz wiek jednego pracownika
     employee = ["Jan", "Kowalski", 24]
 
+Aby odwołać się do poszczególnych elementów listy również wykorzystujemy nawiasy kwadratowe. Tym razem podajemy w nich
+indeks danego elementu. Indeksem jest numer pozycji licząc od 0. Można również liczyć pozycję od ostatniego elementu
+używając indeksów ujemnych.
+
+.. code-block:: python
+
+    # Pierwszy i ostatni wynik totolotka licząc od początku.
+    first_lotto_number = lotto_numbers[0]
+    last_lotto_number = lotto_numbers[5]
+
+    # Pierwszy i ostatni wynik totolotka licząc od końca.
+    first_lotto_number = lotto_numbers[-6]
+    last_lotto_number = lotto_numbers[-1]
+
+    # Dane pracownika
+    first_name = employee[0]
+    last_name = employee[1]
+    age = employee[2]
+
 tuple
 =====
 
