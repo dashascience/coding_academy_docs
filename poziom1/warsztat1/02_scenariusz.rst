@@ -225,7 +225,7 @@ tej samej listy może być innego typu.
     lotto_numbers = [3, 17, 19, 23, 27, 31]
 
     # Lista angielskich dni tygodnia
-    days_of_week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+    days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
     # Lista zawierająca imię, nazwisko oraz wiek jednego pracownika
     employee = ["Jan", "Kowalski", 24]
