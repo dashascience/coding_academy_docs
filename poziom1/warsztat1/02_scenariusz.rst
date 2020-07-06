@@ -212,6 +212,41 @@ B05 - Python: sekwencje
 W języku Python występują dwa główne typy reprezentujące sekwencje obiektów: listy (ang. list) i krotki (ang. tuple).
 Sekwencja obiektów to taki obiekt który przechowuje inne obiekty. Obiekty te mają zdefiniowaną kolejność.
 
+tuple
+=====
+
+Krotki tworzymy poprzez proste wylistowanie obiektów oddzielonych przecinkiem. Krotka może mieścić w sobie elementy
+dowolnego typu. Członkami tej samej krotki mogą nawet być obiekty różnych typów.
+
+.. code-block:: python
+
+    # Współrzędne GPS budynku ING na Sokolskiej 34 w Katowicach
+    >>> sokolska_34_gps = 50.265196, 19.018155
+    >>> sokolska_34_gps
+    (50.265196, 19.018155)
+
+    # Współrzędne konia na planszy szachowej
+    >>> chess_knight_location = "B", 5
+    >>> chess_knight_location
+    ('B', 5)
+
+
+Często spotykaną praktyką przy tworzeniu krotki jest umieszczanie listy elementów krotki w okrągłych nawiasach. Widzimy
+nawet, że taka reprezentaja krotki jest stosowana domyślnie przez konsolę REPL. Stosowanie nawiasów poprawia czytelność
+kodu, jednak trzeba pamiętać, że podobnie jak w znanych nam wyrażeniach matematycznych, tak i tu nie są one wymagane.
+
+.. code-block:: python
+
+    # Poniższe dwa sposoby tworzenia krotek są sobie równoważne
+    >>> tuple_1 = 1, 2, 3, 4, 5
+    >>> tuple_1
+    (1, 2, 3, 4, 5)
+
+    >>> tuple_2 = (1, 2, 3, 4, 5)
+    >>> tuple_2
+    (1, 2, 3, 4, 5)
+
+
 list
 ====
 
@@ -314,9 +349,6 @@ Możliwość modyfikacji obiektów nazywamy mutowalnością (ang. mutable). List
 
 .. TODO: trailing comma, multi-line square brackets, list constructor, concatenation and repetition, cloning,
     explain shallow clone, obtaining index, counting, membership (in), sorting and reversing, len
-
-tuple
-=====
 
 set
 ===
