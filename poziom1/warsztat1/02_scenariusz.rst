@@ -305,20 +305,37 @@ ostatniego elementu używając indeksów ujemnych.
 
 .. code-block:: python
 
-    # Pierwszy, drugi i ostatni wynik totolotka licząc od początku.
-    first_lotto_number = lotto_numbers[0]
-    second_lotto_number = lotto_numbers[1]
-    last_lotto_number = lotto_numbers[5]
+    # Składowe pola na planszy szachowej
+    >>> chess_knight_location = ("B", 5)
+    >>> chess_knight_location[0] # kolumna
+    'B'
+    >>> chess_knight_location[1] # rząd
+    5
 
-    # Pierwszy, drugi i ostatni wynik totolotka licząc od końca.
-    first_lotto_number = lotto_numbers[-6]
-    second_lotto_number = lotto_numbers[-5]
-    last_lotto_number = lotto_numbers[-1]
+    # Pierwsza, druga i ostatnia liczba wyniku totolotka licząc od początku
+    >>> lotto_numbers = [3, 17, 19, 23, 27, 31]
+    >>> lotto_numbers[0] # pierwsza liczba
+    3
+    >>> lotto_numbers[1] # druga liczba
+    17
+    >>> lotto_numbers[5] # szósta liczba
+    31
+
+    # Pierwsza, druga i ostatnia liczba wyniku totolotka licząc od końca
+    >>> lotto_numbers[-6] # pierwsza liczba
+    3
+    >>> lotto_numbers[-5] # druga liczba
+    17
+    >>> lotto_numbers[-1] # szósta liczba
+    31
 
     # Dane pracownika
-    first_name = employee[0]
-    last_name = employee[1]
-    age = employee[2]
+    >>> employee = ['Jan', 'Kowalski', 24]
+    >>> first_name = employee[0]
+    >>> last_name = employee[1]
+    >>> age = employee[2]
+    >>> print(first_name, last_name, age, "lata")
+    Jan Kowalski 24 lata
 
 To jakie elementy ma mieścić w sobie lista można podać podczas jej tworzenia, jednak nie jest to jedyny możliwy sposób.
 Listę możemy w każdym momencie zmodyfikować. Najprostszymi operacjami modyfikacji listy jest dodawanie i usuwanie
