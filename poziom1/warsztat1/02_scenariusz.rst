@@ -232,7 +232,7 @@ dowolnego typu. Członkami tej samej krotki mogą nawet być obiekty różnych t
 
 
 Często spotykaną praktyką przy tworzeniu krotki jest umieszczanie listy elementów krotki w okrągłych nawiasach. Widzimy
-nawet, że taka reprezentaja krotki jest stosowana domyślnie przez konsolę REPL. Stosowanie nawiasów poprawia czytelność
+nawet, że taka reprezentacja krotki jest stosowana domyślnie przez konsolę REPL. Stosowanie nawiasów poprawia czytelność
 kodu, jednak trzeba pamiętać, że podobnie jak w znanych nam wyrażeniach matematycznych, tak i tu nie są one wymagane.
 
 .. code-block:: python
@@ -366,7 +366,7 @@ dana wartość występuje w sekwencji poprzez operator ``in``, wyszukać indeks 
 
 To jakie elementy ma mieścić w sobie lista można podać podczas jej tworzenia, jednak nie jest to jedyny możliwy sposób.
 Listę możemy w każdym momencie zmodyfikować. Najprostszymi operacjami modyfikacji listy jest dodawanie i usuwanie
-pojedyńczych jej elementów jak również wymiana wartości znajdujących się na określonej pozycji. Aby to zobaczyć
+pojedynczych jej elementów jak również wymiana wartości znajdujących się na określonej pozycji. Aby to zobaczyć
 odwiedźmy hinduską restaurację.
 
 .. code-block:: python
@@ -412,7 +412,7 @@ odwiedźmy hinduską restaurację.
     >>> print(ordered_dishes)
     []
 
-Nowy elemeny możemy dodać na koniec listy za pomocą metody ``apped``, lub wstawić go przed element o podanej pozycji za
+Nowy element możemy dodać na koniec listy za pomocą metody ``apped``, lub wstawić go przed element o podanej pozycji za
 pomocą metody ``insert``. Metoda ``insert`` przyjmuje najpierw pozycję elementu istniejącego, a następnie element
 wstawiany. Jeżeli chcemy dodać na koniec listy kilka elementów jednocześnie to do tego używamy metody ``extend``.
 
