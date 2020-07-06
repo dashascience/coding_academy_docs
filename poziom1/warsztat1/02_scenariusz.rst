@@ -275,13 +275,19 @@ innego typu.
 .. code-block:: python
 
     # Lista wyników totolotka
-    lotto_numbers = [3, 17, 19, 23, 27, 31]
+    >>> lotto_numbers = [3, 17, 19, 23, 27, 31]
+    >>> lotto_numbers
+    [3, 17, 19, 23, 27, 31]
 
     # Lista angielskich dni tygodnia
-    days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    >>> days_of_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    >>> days_of_week
+    ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
     # Lista zawierająca imię, nazwisko (napisy) oraz wiek (liczba) jednego pracownika.
-    employee = ["Jan", "Kowalski", 24]
+    >>> employee = ['Jan', 'Kowalski', 24]
+    >>> employee
+    ['Jan', 'Kowalski', 24]
 
 Aby odwołać się do poszczególnych elementów listy również wykorzystujemy nawiasy kwadratowe. Tym razem podajemy w nich
 indeks danego elementu. Indeksem jest numer pozycji licząc od 0. Można również liczyć pozycję od ostatniego elementu
