@@ -246,6 +246,24 @@ kodu, jednak trzeba pamiętać, że podobnie jak w znanych nam wyrażeniach mate
     >>> tuple_2
     (1, 2, 3, 4, 5)
 
+Aby utworzyć krotkę pustą lub jednoelementową, trzeba posłużyć się specjalnymi elementami składni. Krotka pusta tworzona
+jest poprzez wykorzystanie konstruktora ``tuple``, natomiast krotka jednoelementowa wymaga postawienia przecinka za
+wartością wchodzącą w jej skład.
+
+.. code-block:: python
+
+    # Krotka pusta
+    >>> tuple()
+    ()
+
+    # Krotka z jednego elementu
+    >>> 3,
+    (3,)
+
+    # Przecinek można też postawić na końcu dowolnie długiej krotki
+    >>> 2, 3, 5, 7, 11,
+    (2, 3, 5, 7, 11)
+
 
 list
 ====
