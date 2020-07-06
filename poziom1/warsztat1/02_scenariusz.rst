@@ -268,9 +268,9 @@ wartością wchodzącą w jej skład.
 list
 ====
 
-Listę obiektów tworzymy poprzez użycie nawiasów kwadratowych. Listy mogą mieścić w sobie elementy dowolnych typów.
-Mogą to być liczby całkowite, mogą to być napisy, oraz inne typy obiektów. Każdy element tej samej listy może być
-innego typu.
+Listę obiektów, podobnie jak krotkę, tworzymy poprzez wylistowanie elementów oddzielonych przecinkami, całość obejmując
+jednak nawiasami kwadratowymi. Listy również mogą mieścić w sobie elementy dowolnych typów. Mogą to być liczby
+całkowite, mogą to być napisy, oraz inne typy obiektów. Każdy element tej samej listy może być innego typu.
 
 .. code-block:: python
 
@@ -289,9 +289,19 @@ innego typu.
     >>> employee
     ['Jan', 'Kowalski', 24]
 
-Aby odwołać się do poszczególnych elementów listy również wykorzystujemy nawiasy kwadratowe. Tym razem podajemy w nich
-indeks danego elementu. Indeksem jest numer pozycji licząc od 0. Można również liczyć pozycję od ostatniego elementu
-używając indeksów ujemnych.
+    # Pusta lista
+    >>> []
+    []
+    >>> list()
+    []
+
+    # Przecinek za ostatnim elementem listy jest również dozwolony
+    >>> [3, 2, 1,]
+    [3, 2, 1]
+
+Aby odwołać się do poszczególnych elementów krotki lub listy również wykorzystujemy nawiasy kwadratowe. Tym razem
+podajemy w nich indeks danego elementu. Indeksem jest numer pozycji licząc od 0. Można również liczyć pozycję od
+ostatniego elementu używając indeksów ujemnych.
 
 .. code-block:: python
 
@@ -371,8 +381,8 @@ natomiast z listy elementy o podanej wartości. Jeżeli chcemy wyczyścić wszys
 
 Możliwość modyfikacji obiektów nazywamy mutowalnością (ang. mutable). Listy są przykładem obiektów mutowalnych.
 
-.. TODO: trailing comma, multi-line square brackets, list constructor, concatenation and repetition, cloning,
-    explain shallow clone, obtaining index, counting, membership (in), sorting and reversing, len
+.. TODO: concatenation and repetition, cloning, explain shallow clone, obtaining index, len, counting, membership (in),
+    sorting and reversing
 
 set
 ===
