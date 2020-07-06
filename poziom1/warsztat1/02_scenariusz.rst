@@ -337,6 +337,33 @@ ostatniego elementu używając indeksów ujemnych.
     >>> print(first_name, last_name, age, "lata")
     Jan Kowalski 24 lata
 
+Mając krotkę lub listę możemy również sprawdzić liczbę elementów przez użycie funkcji wbudowanej ``len``, sprawdzić czy
+dana wartość występuje w sekwencji poprzez operator ``in``, wyszukać indeks elementu o zadanej wartości za pomocą metody
+``index`` oraz policzyć liczbę wystąpień zadanej wartości za pomocą metody ``count``.
+
+.. code-block:: python
+
+    >>> numbers = (1, 4, 5, 3, 4, 1, 6)
+    >>> len(numbers) # liczba elementów krotki
+    7
+    >>> 4 in numbers # sprawdzenie czy wartość 4 występuje w sekwencji
+    True
+    >>> numbers.index(4) # pozycja pierwszego wystąpienia wartości 4
+    1
+    >>> numbers.count(4) # liczba wystąpień wartości 4 w sekwencji
+    2
+
+    # Ten same operacje dostępne są również na liście
+    >>> numbers = [1, 4, 5, 3, 4, 1, 6]
+    >>> len(numbers) # liczba elementów krotki
+    7
+    >>> 4 in numbers # sprawdzenie czy wartość 4 występuje w sekwencji
+    True
+    >>> numbers.index(4) # pozycja pierwszego wystąpienia wartości 4
+    1
+    >>> numbers.count(4) # liczba wystąpień wartości 4 w sekwencji
+    2
+
 To jakie elementy ma mieścić w sobie lista można podać podczas jej tworzenia, jednak nie jest to jedyny możliwy sposób.
 Listę możemy w każdym momencie zmodyfikować. Najprostszymi operacjami modyfikacji listy jest dodawanie i usuwanie
 pojedyńczych jej elementów jak również wymiana wartości znajdujących się na określonej pozycji. Aby to zobaczyć
@@ -398,8 +425,7 @@ natomiast z listy elementy o podanej wartości. Jeżeli chcemy wyczyścić wszys
 
 Możliwość modyfikacji obiektów nazywamy mutowalnością (ang. mutable). Listy są przykładem obiektów mutowalnych.
 
-.. TODO: concatenation and repetition, cloning, explain shallow clone, obtaining index, len, counting, membership (in),
-    sorting and reversing
+.. TODO: concatenation and repetition, cloning, explain shallow clone, sorting and reversing
 
 set
 ===
