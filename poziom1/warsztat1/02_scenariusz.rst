@@ -364,10 +364,37 @@ dana wartość występuje w sekwencji poprzez operator ``in``, wyszukać indeks 
     >>> numbers.count(4) # liczba wystąpień wartości 4 w sekwencji
     2
 
-To jakie elementy ma mieścić w sobie lista można podać podczas jej tworzenia, jednak nie jest to jedyny możliwy sposób.
-Listę możemy w każdym momencie zmodyfikować. Najprostszymi operacjami modyfikacji listy jest dodawanie i usuwanie
-pojedynczych jej elementów jak również wymiana wartości znajdujących się na określonej pozycji. Aby to zobaczyć
-odwiedźmy hinduską restaurację.
+Dwie listy lub dwie krotki możemy skleić ze sobą za pomocą operatora dodawania. Taka operacja nazywasię konkatenacja.
+Typy sekwencji sklejanych muszą się zgadzać, czyli nie możemy skleić listy z krotką.
+
+.. code-block:: python
+
+    >>> (5, 2, 4) + (2, 4, 1)
+    (5, 2, 4, 2, 4, 1)
+
+    >>> ['Alicja', 'Monika', 'Natalia'] + ['Jerzy', 'Mateusz', 'Robert']
+    ['Alicja', 'Monika', 'Natalia', 'Jerzy', 'Mateusz', 'Robert']
+
+Możemy stworzyć krotkę bądź listę złożoną z powtórzonej sekwencji elementów wykorzystując operator mnożenia przez liczbę
+całkowitą.
+
+.. code-block:: python
+
+    >>> [0, 1] * 5
+    [0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+
+    >>> (0,) * 10
+    (0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+Skoro zarówno krotka jak i lista są sekwencjami obiektów to jaka jest podstawowa różnica pommiędzy nimi?
+Odpowiedź jest prosta. Krotka nie może zostać zmodyfikowana, lista natomiast może. O obiektach, któryh wartość nie
+zmienia się mówimy, że są niemutowalne (ang. immutable). Obiekty których wartość może po utworzeniu ulec zmianie są
+mutowalne (ang. mutable). Obiekty niemutowalne mają wiele zalet nad swoimi mutowalnymi odpowiednikami. Jedną z głównych
+zalet jest możliwość łatwiejszego wykorzystania w obliczeniach współbieżnych.
+
+Zobaczmy jednak w jaki sposób elementy listy mogą być zmieniane. Najprostszymi operacjami modyfikacji listy jest
+dodawanie i usuwanie pojedynczych jej elementów jak również wymiana wartości znajdujących się na określonej pozycji.
+Aby to zobaczyć odwiedźmy hinduską restaurację.
 
 .. code-block:: python
 
@@ -423,9 +450,7 @@ Jeżeli znamy pozycję elementu, możemy usunąć go z listy używając słowa k
 natomiast z listy elementy o podanej wartości. Jeżeli chcemy wyczyścić wszystkie elementy listy możemy użyć metody
 ``clear``.
 
-Możliwość modyfikacji obiektów nazywamy mutowalnością (ang. mutable). Listy są przykładem obiektów mutowalnych.
-
-.. TODO: concatenation and repetition, cloning, explain shallow clone, sorting and reversing
+.. TODO: cloning, explain shallow clone, sorting and reversing
 
 set
 ===
