@@ -386,6 +386,11 @@ całkowitą.
     >>> (0,) * 10
     (0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
+    >>> (1, 2, 3) + [4, 5, 6]
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: can only concatenate tuple (not "list") to tuple
+
 Skoro zarówno krotka jak i lista są sekwencjami obiektów to jaka jest podstawowa różnica pommiędzy nimi?
 Odpowiedź jest prosta. Krotka nie może zostać zmodyfikowana, lista natomiast może. O obiektach, któryh wartość nie
 zmienia się mówimy, że są niemutowalne (ang. immutable). Obiekty których wartość może po utworzeniu ulec zmianie są
