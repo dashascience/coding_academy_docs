@@ -549,7 +549,7 @@ Typy numeryczne rzutujemy bez problemu na dowolny inny typ:
 
 Typy znakowe też, ale tylko gdy ma to sens (nie da się np. zamienić ciągu liter na liczbę).
 
-.. code-block::
+.. code-block:: python
 
    >>> string_value = '123'
    >>> int(string_value)
@@ -565,10 +565,11 @@ Typy znakowe też, ale tylko gdy ma to sens (nie da się np. zamienić ciągu li
    >>> another_String_value = 'abc'
    >>> bool(another_String_value)
    True
+
    # nie wszystkie stringi da się rzutować na typy numeryczne
    >>> int(another_String_value)
    Traceback (most recent call last):
-   File "<input>", line 1, in <module>
+     File "<input>", line 1, in <module>
    ValueError: invalid literal for int() with base 10: 'abc'
 
 .. note::
