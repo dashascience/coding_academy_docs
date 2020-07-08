@@ -160,6 +160,44 @@ float - liczby zmiennoprzecinkowe
 
 B03 - Python: logiczne typy danych
 **********************************
+Wartości logiczne to stałe przyporządkowujące prawdę albo fałsz danemu wyrażeniu logicznemu.
+W Pythonie występują jako **True** - gdy wyrażenie jest prawdziwe oraz **False** - gdy wyrażenie jest fałszywe.
+W logice matematycznej zazwyczaj prezentowane są przez liczby 1 oraz 0.
+Zmienne, które mogą przechowywać tego typu wartości są typu **bool**.
+
+Za pomocą metody ```bool()```, możemy sprawdzić w Pythonie wartość logiczną wyrażenia logicznego.
+
+Wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania:
+    * **a<b** - a mniejsze od b
+    * **a<=b** - a mniejsze lub równe od b
+    * **a>b** - a większe od b
+    * **a>=b** - a większe lub równe b
+    * **a==b** a równe b
+    * **a!=b** - a różne od b
+oraz operatorów logicznych:
+    * **a and b** - koniunkcja, warunek jest prawdziwy jeśli wyrażenia a oraz b jest prawdą
+    * **a or b** - alternatywa, warunek jest prawdziwy jeśli conajmniej jedna wartość jest prawdziwa
+    * **a in b** - warunek prawdziwy jeżeli a zawiera się w b
+    * **a is b** - warunek sprawdza, czy zmienne wskazują ten sam obszar w pamięci komputera
+    * **not a** - warunek oznacza zaprzeczenie wyrażenia a
+
+W poniższym przykładzie sprawdzimy, czy liczba 673 jest liczbą parzystą oraz sprawdzimy, czy dwa podane ciągi znaków
+różnią się od siebie. W obu przypadkach jako wynik otrzymujemy wartość typu **bool**:
+
+.. code-block:: python
+
+    ''' x % y -> działanie modulo, zwraca resztę z dzielenia liczby x przez liczbę y
+    gdy reszta z dzielenia jest równa zero mamy do czynienia z liczba podzielna przez y'''
+    print(bool(673 % 2 == 0)) #False
+    print(bool('Ala ma kota' != 'kot ma Alę')) #True
+..
+
+
+Typ zmiennych możemy sprawdzić za pomocą metody ```type()```
+.. code-block:: python
+
+    print(type(False)) #bool
+    print(type(3>=1)) #bool
 
 bool
 ====
