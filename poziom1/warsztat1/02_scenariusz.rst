@@ -186,8 +186,8 @@ różnią się od siebie. W obu przypadkach jako wynik otrzymujemy wartość typ
 
 .. code-block:: python
 
-    ''' x % y -> działanie modulo, zwraca resztę z dzielenia liczby x przez liczbę y
-    gdy reszta z dzielenia jest równa zero mamy do czynienia z liczba podzielna przez y'''
+    # x % y -> działanie modulo, zwraca resztę z dzielenia liczby x przez liczbę y
+    #gdy reszta z dzielenia jest równa zero mamy do czynienia z liczba podzielna przez y
     print(bool(673 % 2 == 0)) #False
     print(bool('Ala ma kota' != 'kot ma Alę')) #True
 ..
