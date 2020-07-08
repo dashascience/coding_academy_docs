@@ -165,7 +165,7 @@ W Pythonie występują jako **True** - gdy wyrażenie jest prawdziwe oraz **Fals
 W logice matematycznej zazwyczaj prezentowane są przez liczby 1 oraz 0.
 Zmienne, które mogą przechowywać tego typu wartości są typu **bool**.
 
-Za pomocą metody ```bool()```, możemy sprawdzić w Pythonie wartość logiczną wyrażenia logicznego.
+Za pomocą metody ```bool()``` możemy sprawdzić wartość logiczną danego wyrażenia logicznego.
 
 Wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania:
     * **a<b** - a mniejsze od b
@@ -194,13 +194,12 @@ różnią się od siebie. W obu przypadkach jako wynik otrzymujemy wartość typ
 
 
 Typ zmiennych możemy sprawdzić za pomocą metody ```type()```
+
 .. code-block:: python
 
     print(type(False)) #bool
     print(type(3>=1)) #bool
-
-bool
-====
+..
 
 None
 ====
