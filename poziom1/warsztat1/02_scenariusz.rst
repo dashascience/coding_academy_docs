@@ -175,9 +175,9 @@ Wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów por
     * **a==b** a równe b
     * **a!=b** - a różne od b
 oraz operatorów logicznych:
-    * **a and b** - koniunkcja, warunek jest prawdziwy jeśli wyrażenia a oraz b jest prawdą
-    * **a or b** - alternatywa, warunek jest prawdziwy jeśli conajmniej jedna wartość jest prawdziwa
-    * **a in b** - warunek prawdziwy jeżeli a zawiera się w b
+    * **a and b** - koniunkcja, warunek jest prawdziwy jeśli wyrażenia a oraz b są prawdziwe
+    * **a or b** - alternatywa, warunek jest prawdziwy jeśli conajmniej jedno wyrażenie a lub b jest prawdziwe
+    * **a in b** - warunek prawdziwy jeżeli a zawiera się w b, np 'abc' in 'abcd'
     * **a is b** - warunek sprawdza, czy zmienne wskazują ten sam obszar w pamięci komputera
     * **not a** - warunek oznacza zaprzeczenie wyrażenia a
 
