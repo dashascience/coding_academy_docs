@@ -213,14 +213,17 @@ Warto również pamiętać, że każdy z obiektów ma w Pythonie przyporządkowa
 
 **Ćwiczenie**
  Za pomocą metod: ```bool()``` oraz ```type()``` sprawdź jaką wartość logiczną oraz jaki typ/klasę przezentują poniższe przykłady:
+
 .. code-block:: python
+
     x = "0"
     #x = [()]
     #x = False
     #x = None
     #x = {None}
     print("wartość logczina: ", bool(x),"\n", "typ: ", type(x))
-
+..
+a
 
 B04 - Python: łańcuchy znaków
 *****************************
