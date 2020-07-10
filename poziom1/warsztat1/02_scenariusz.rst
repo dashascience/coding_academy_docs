@@ -164,9 +164,9 @@ Wartości logiczne to stałe przyporządkowujące prawdę albo fałsz do danego 
 W Pythonie występują jako **True** - gdy wyrażenie jest prawdziwe oraz **False** - gdy wyrażenie jest fałszywe.
 W logice matematycznej zazwyczaj prezentowane są przez liczby 1 oraz 0.
 Zmienne, które mogą przechowywać tego typu wartości są typu **bool**. Nazwa ta wywodzi się od nazwiska angielskiego
-matematyka George'a Boola, który zajmował się logiką.
+matematyka George'a Bool'a, który zajmował się logiką.
 
-Dla przypomnienia wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania oraz operatorów logicznych.
+Dla przypomnienia, wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania oraz operatorów logicznych.
 
 Operatory porównania:
 
