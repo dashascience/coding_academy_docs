@@ -165,9 +165,8 @@ W Pythonie występują jako **True** - gdy wyrażenie jest prawdziwe oraz **Fals
 W logice matematycznej zazwyczaj prezentowane są przez liczby 1 oraz 0.
 Zmienne, które mogą przechowywać tego typu wartości są typu **bool**. Nazwa ta wywodzi się od nazwiska angielskiego
 matematyka George'a Boola, który zajmował się logiką.
-
-Dla przypomnienia - wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania:
 ..
+Dla przypomnienia - wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania:
     * **a<b** - a mniejsze od b
     * **a<=b** - a mniejsze lub równe od b
     * **a>b** - a większe od b
@@ -175,8 +174,8 @@ Dla przypomnienia - wyrażenia logiczne budujemy korzystając z poznanych wcześ
     * **a==b** a równe b
     * **a!=b** - a różne od b
 ..
-oraz operatorów logicznych:
 ..
+oraz operatorów logicznych:
     * **a and b** - koniunkcja, warunek jest prawdziwy jeśli wyrażenia a oraz b są prawdziwe
     * **a or b** - alternatywa, warunek jest prawdziwy jeśli conajmniej jedno wyrażenie a lub b jest prawdziwe
     * **a in b** - warunek prawdziwy jeżeli a zawiera się w b (np 'abc' in 'abcd')
@@ -206,12 +205,12 @@ jako wynik zawsze otrzymamy typ **bool**.
     print(type(False)) #bool
     print(type(3>=1)) #bool
 ..
-
+..
 Warto również pamiętać, że każdy z obiektów ma w Pythonie przyporządkowaną do siebie wartość logiczną
 (co nie oznacza, że sam musi być typu bool)
     * None, False, 0, puste kolekcje ("", (), [], {}) ma wartość **False**
     * Wszystkie inne obiekty wartość **True**
-
+..
 .. code-block:: python
    Ćwiczenie
    Za pomocą metod: bool() oraz type() sprawdź jaką wartość logiczną oraz jaki typ/ klasę przezentują poniższe przykłady:
