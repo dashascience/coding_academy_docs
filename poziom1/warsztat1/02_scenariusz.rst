@@ -160,40 +160,47 @@ float - liczby zmiennoprzecinkowe
 
 B03 - Python: logiczne typy danych
 **********************************
-Wartości logiczne to stałe przyporządkowujące prawdę albo fałsz danemu wyrażeniu logicznemu.
+Wartości logiczne to stałe przyporządkowujące prawdę albo fałsz do danego wyrażenia logicznego.
 W Pythonie występują jako **True** - gdy wyrażenie jest prawdziwe oraz **False** - gdy wyrażenie jest fałszywe.
 W logice matematycznej zazwyczaj prezentowane są przez liczby 1 oraz 0.
-Zmienne, które mogą przechowywać tego typu wartości są typu **bool**.
+Zmienne, które mogą przechowywać tego typu wartości są typu **bool**. Nazwa ta wywodzi się od nazwiska angielskiego
+matematyka George'a Boola, który zajmował się logiką.
 
-Za pomocą metody ```bool()``` możemy sprawdzić wartość logiczną danego wyrażenia logicznego.
+Za pomocą metody ```bool()``` możemy sprawdzić wartość logiczną danego wyrażenia logicznego albo obiektu.
+Oznacza to, że bool(x) zwarca wartość True albo False.
 
-Wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania:
+Dla przypomnienia - wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania:
+..
     * **a<b** - a mniejsze od b
     * **a<=b** - a mniejsze lub równe od b
     * **a>b** - a większe od b
     * **a>=b** - a większe lub równe b
     * **a==b** a równe b
     * **a!=b** - a różne od b
+..
 oraz operatorów logicznych:
+..
     * **a and b** - koniunkcja, warunek jest prawdziwy jeśli wyrażenia a oraz b są prawdziwe
     * **a or b** - alternatywa, warunek jest prawdziwy jeśli conajmniej jedno wyrażenie a lub b jest prawdziwe
-    * **a in b** - warunek prawdziwy jeżeli a zawiera się w b, np 'abc' in 'abcd'
+    * **a in b** - warunek prawdziwy jeżeli a zawiera się w b (np 'abc' in 'abcd')
     * **a is b** - warunek sprawdza, czy zmienne wskazują ten sam obszar w pamięci komputera
     * **not a** - warunek oznacza zaprzeczenie wyrażenia a
+..
+Warto również przypomnieć że **not a and not b** możemy zastąpić wyrażeniem ** not(a or b)
 
-W poniższym przykładzie sprawdzimy, czy liczba 673 jest liczbą parzystą oraz sprawdzimy, czy dwa podane ciągi znaków
-różnią się od siebie. W obu przypadkach jako wynik otrzymujemy wartość typu **bool**:
+W poniższym przykładzie sprawdzimy, czy liczba 673 jest liczbą parzystą oraz czy dwa podane ciągi znaków
+się od siebie różnią.
 
 .. code-block:: python
 
     # x % y -> działanie modulo, zwraca resztę z dzielenia liczby x przez liczbę y
-    #gdy reszta z dzielenia jest równa zero mamy do czynienia z liczba podzielna przez y
+    # gdy reszta z dzielenia jest równa zero mamy do czynienia z liczbą podzielną przez y
     print(bool(673 % 2 == 0)) #False
     print(bool('Ala ma kota' != 'kot ma Alę')) #True
 ..
 
-
-Typ zmiennych możemy sprawdzić za pomocą metody ```type()```
+Typ zmiennych możemy sprawdzić za pomocą metody ```type()```. W przypadku zmiennych logicznych **False** oraz **True**
+jako wynik zawsze otrzymamy typ **bool**.
 
 .. code-block:: python
 
@@ -201,8 +208,21 @@ Typ zmiennych możemy sprawdzić za pomocą metody ```type()```
     print(type(3>=1)) #bool
 ..
 
-None
-====
+Warto również pamiętać, że każdy z obiektów ma w Pythonie przyporządkowaną do siebie wartość logiczną (co nie oznacza, że sam musi być typu bool)
+    * None, False, 0, puste kolekcje ("", (), [], {}) ma wartość **False**
+    * Wszystkie inne obiekty wartość **True**
+
+.. note::
+   | Ćwiczenie 1
+   | Za pomocą metod: bool() oraz type() sprawdź jaką wartość logiczną oraz jaki typ/ klasę przezentują poniższe przykłady:
+   | 1) x = "0"
+   | 2) x = [()]
+   | 3) x = False
+   | 3) x = None
+   | 4) x = {None}
+   | print("wartość logczina: ", bool(x),"\n", "typ: ", type(x))
+..
+
 
 B04 - Python: łańcuchy znaków
 *****************************
