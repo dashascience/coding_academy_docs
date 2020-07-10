@@ -166,9 +166,6 @@ W logice matematycznej zazwyczaj prezentowane są przez liczby 1 oraz 0.
 Zmienne, które mogą przechowywać tego typu wartości są typu **bool**. Nazwa ta wywodzi się od nazwiska angielskiego
 matematyka George'a Boola, który zajmował się logiką.
 
-Za pomocą metody ```bool()``` możemy sprawdzić wartość logiczną danego wyrażenia logicznego albo obiektu.
-Oznacza to, że bool(x) zwarca wartość True albo False.
-
 Dla przypomnienia - wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania:
 ..
     * **a<b** - a mniejsze od b
@@ -188,6 +185,8 @@ oraz operatorów logicznych:
 ..
 Warto również przypomnieć że **not a and not b** możemy zastąpić wyrażeniem ** not(a or b)
 
+Za pomocą metody ```bool()``` możemy sprawdzić wartość logiczną danego wyrażenia logicznego albo obiektu.
+Oznacza to, że bool(x) zwarca wartość True albo False.
 W poniższym przykładzie sprawdzimy, czy liczba 673 jest liczbą parzystą oraz czy dwa podane ciągi znaków
 się od siebie różnią.
 
@@ -209,11 +208,12 @@ jako wynik zawsze otrzymamy typ **bool**.
 ..
 
 Warto również pamiętać, że każdy z obiektów ma w Pythonie przyporządkowaną do siebie wartość logiczną (co nie oznacza, że sam musi być typu bool)
+..
     * None, False, 0, puste kolekcje ("", (), [], {}) ma wartość **False**
     * Wszystkie inne obiekty wartość **True**
-
+..
 .. note::
-   | Ćwiczenie 1
+   | Ćwiczenie
    | Za pomocą metod: bool() oraz type() sprawdź jaką wartość logiczną oraz jaki typ/ klasę przezentują poniższe przykłady:
    | 1) x = "0"
    | 2) x = [()]
