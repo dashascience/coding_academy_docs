@@ -167,6 +167,7 @@ Zmienne, które mogą przechowywać tego typu wartości są typu **bool**. Nazwa
 matematyka George'a Boola, który zajmował się logiką.
 
 Dla przypomnienia - wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania:
+..
     * **a<b** - a mniejsze od b
     * **a<=b** - a mniejsze lub równe od b
     * **a>b** - a większe od b
@@ -175,16 +176,17 @@ Dla przypomnienia - wyrażenia logiczne budujemy korzystając z poznanych wcześ
     * **a!=b** - a różne od b
 ..
 oraz operatorów logicznych:
+..
     * **a and b** - koniunkcja, warunek jest prawdziwy jeśli wyrażenia a oraz b są prawdziwe
     * **a or b** - alternatywa, warunek jest prawdziwy jeśli conajmniej jedno wyrażenie a lub b jest prawdziwe
     * **a in b** - warunek prawdziwy jeżeli a zawiera się w b (np 'abc' in 'abcd')
     * **a is b** - warunek sprawdza, czy zmienne wskazują ten sam obszar w pamięci komputera
     * **not a** - warunek oznacza zaprzeczenie wyrażenia a
 ..
-Warto również przypomnieć że **not a and not b** możemy zastąpić wyrażeniem ** not(a or b)
+Warto również przypomnieć, że **not a and not b** możemy zastąpić wyrażeniem **not(a or b)**
 
 Za pomocą metody ```bool()``` możemy sprawdzić wartość logiczną danego wyrażenia logicznego albo obiektu.
-Oznacza to, że bool(x) zwarca wartość True albo False.
+Oznacza to, że bool(x) zwarca wartość True gdy x jest prawdziwe albo False gdy jest fałszywe.
 W poniższym przykładzie sprawdzimy, czy liczba 673 jest liczbą parzystą oraz czy dwa podane ciągi znaków
 się od siebie różnią.
 
@@ -209,16 +211,16 @@ Warto również pamiętać, że każdy z obiektów ma w Pythonie przyporządkowa
 (co nie oznacza, że sam musi być typu bool)
     * None, False, 0, puste kolekcje ("", (), [], {}) ma wartość **False**
     * Wszystkie inne obiekty wartość **True**
-..
-.. note::
-   | Ćwiczenie
-   | Za pomocą metod: bool() oraz type() sprawdź jaką wartość logiczną oraz jaki typ/ klasę przezentują poniższe przykłady:
-   | 1) x = "0"
-   | 2) x = [()]
-   | 3) x = False
-   | 3) x = None
-   | 4) x = {None}
-   | print("wartość logczina: ", bool(x),"\n", "typ: ", type(x))
+
+.. code-block:: python
+   Ćwiczenie
+   Za pomocą metod: bool() oraz type() sprawdź jaką wartość logiczną oraz jaki typ/ klasę przezentują poniższe przykłady:
+   x = "0"
+   #x = [()]
+   #x = False
+   #x = None
+   #x = {None}
+   print("wartość logczina: ", bool(x),"\n", "typ: ", type(x))
 ..
 
 
