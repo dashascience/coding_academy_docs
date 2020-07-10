@@ -220,7 +220,6 @@ Warto również pamiętać, że każdy z obiektów ma w Pythonie przyporządkowa
     #x = None
     #x = {None}
     print("wartość logczina: ", bool(x),"\n", "typ: ", type(x))
-..
 
 
 B04 - Python: łańcuchy znaków
