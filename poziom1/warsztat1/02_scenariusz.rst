@@ -187,7 +187,7 @@ Operatory logiczne:
 Warto również przypomnieć, że **not a and not b** możemy zastąpić wyrażeniem **not(a or b)**
 
 Za pomocą metody ```bool()``` możemy sprawdzić wartość logiczną danego wyrażenia logicznego albo obiektu.
-Oznacza to, że bool(x) zwarca wartość True gdy x jest prawdziwe albo False gdy jest fałszywe.
+Oznacza to, że bool(**x**) zwarca wartość **True** gdy **x** jest prawdziwe albo **False** gdy jest fałszywe.
 W poniższym przykładzie sprawdzimy, czy liczba 673 jest liczbą parzystą oraz czy dwa podane ciągi znaków
 się od siebie różnią.
 
@@ -210,7 +210,7 @@ jako wynik zawsze otrzymamy typ **bool**.
 Warto również pamiętać, że każdy z obiektów ma w Pythonie przyporządkowaną do siebie wartość logiczną
 (co nie oznacza, że sam musi być typu bool)
 
-    * None, False, 0, puste kolekcje ("", (), [], {}) ma wartość **False**
+    * None, False, 0, puste kolekcje ("", (), [], {}) mają wartość **False**
     * Wszystkie inne obiekty wartość **True**
 
 **Ćwiczenie**
