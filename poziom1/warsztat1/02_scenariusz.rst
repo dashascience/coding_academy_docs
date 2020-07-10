@@ -169,6 +169,7 @@ matematyka George'a Boola, który zajmował się logiką.
 Dla przypomnienia wyrażenia logiczne budujemy korzystając z poznanych wcześniej operatorów porównania oraz operatorów logicznych.
 
 Operatory porównania:
+
     * **a<b** - a mniejsze od b
     * **a<=b** - a mniejsze lub równe od b
     * **a>b** - a większe od b
@@ -176,6 +177,7 @@ Operatory porównania:
     * **a==b** a równe b
     * **a!=b** - a różne od b
 Operatory logiczne:
+
     * **a and b** - koniunkcja, warunek jest prawdziwy jeśli wyrażenia a oraz b są prawdziwe
     * **a or b** - alternatywa, warunek jest prawdziwy jeśli conajmniej jedno wyrażenie a lub b jest prawdziwe
     * **a in b** - warunek prawdziwy jeżeli a zawiera się w b (np 'abc' in 'abcd')
@@ -204,10 +206,10 @@ jako wynik zawsze otrzymamy typ **bool**.
 
     print(type(False)) #bool
     print(type(3>=1)) #bool
-..
 
 Warto również pamiętać, że każdy z obiektów ma w Pythonie przyporządkowaną do siebie wartość logiczną
 (co nie oznacza, że sam musi być typu bool)
+
     * None, False, 0, puste kolekcje ("", (), [], {}) ma wartość **False**
     * Wszystkie inne obiekty wartość **True**
 
@@ -223,7 +225,7 @@ Warto również pamiętać, że każdy z obiektów ma w Pythonie przyporządkowa
     #x = {None}
     print("wartość logczina: ", bool(x),"\n", "typ: ", type(x))
 ..
-a
+
 
 B04 - Python: łańcuchy znaków
 *****************************
