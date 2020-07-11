@@ -151,12 +151,55 @@ Type annotatnions
 
 B02 - Python: numeryczne typy danych
 ************************************
+Liczby w Pythonie mogą być dwojakiego typu – int (integer = l. całkowita) i float (floating point number l. zmiennoprzecinkowa).
 
 int - liczby całkowite
 ======================
+Typ int reprezentuje liczby całkowite dodatnie lub ujemne bez kropki dziesiętnej.
+Przykłady przypisania danych typu integer do zmiennych a, b, c:
+
+.. code-block:: python
+
+    a = 10
+    b = -5 + 2
+    c = 3141592653589793238462643383279502
+
+Konwersja liczby 5.5 do typu int:
+
+.. code-block:: python
+
+    x = int(5.5)
+    print(x)
 
 float - liczby zmiennoprzecinkowe
 =================================
+Typ float (zmiennoprzecinkowy) reprezentuje liczby rzeczywiste.
+Składają się one z części całkowitej i ułamkowej. Separatorem dzielącym część całkowitą od ułamkowej jest kropka.
+
+Przykłady przypisania danych typu float do zmiennych a, b, c:
+
+.. code-block:: python
+
+    a = 7.3
+    b = -0.01
+    c = 1.4e27
+
+Przejście na liczbę zmiennoprzecinkową:
+
+.. code-block:: python
+
+    x = float(5)
+    print(x)
+
+
+za pomocą ```type()``` można sprawdzić typ danych:
+
+.. code-block:: python
+
+    print(type(3))
+    print(type(3.3))
+
+
 
 B03 - Python: logiczne typy danych
 **********************************
